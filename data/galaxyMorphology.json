@@ -1,0 +1,46 @@
+{
+  "_source": "OpenNGC (https://github.com/mattiaverga/OpenNGC), CC-BY-SA-4.0; MajAx/MinAx in arcmin, PosAng in degrees east of north, Hubble as catalogued. Nulls mean the catalogue has no value.",
+  "galaxies": {
+    "andromeda": {
+      "openngc": "NGC0224",
+      "hubble": "Sb",
+      "majAxArcmin": 177.83,
+      "minAxArcmin": 69.66,
+      "posAngDeg": 35,
+      "bMag": 4.29
+    },
+    "triangulum": {
+      "openngc": "NGC0598",
+      "hubble": "Sc",
+      "majAxArcmin": 62.09,
+      "minAxArcmin": 36.73,
+      "posAngDeg": 23,
+      "bMag": 6.35
+    },
+    "m87": {
+      "openngc": "NGC4486",
+      "hubble": "E",
+      "majAxArcmin": 7.11,
+      "minAxArcmin": 6.67,
+      "posAngDeg": 153,
+      "bMag": 9.65
+    },
+    "lmc": {
+      "openngc": "ESO056-115",
+      "hubble": "SBm",
+      "majAxArcmin": 646,
+      "minAxArcmin": 550,
+      "posAngDeg": 170,
+      "bMag": 0.8
+    },
+    "milky-way": {
+      "openngc": null,
+      "hubble": null,
+      "majAxArcmin": null,
+      "minAxArcmin": null,
+      "posAngDeg": null,
+      "bMag": null,
+      "note": "Not in OpenNGC; the object summary calls it a barred spiral. No inclination (we are inside it)."
+    }
+  }
+}

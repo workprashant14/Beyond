@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --void: #02030a;
+  --navy: #070b1d;
+  --ink: #e8ecff;
+  --muted: #8b93b8;
+  --line: rgba(160, 175, 255, 0.14);
+  --blue: #5b8cff;
+  --violet: #8b6cff;
+  --cyan: #52e0ff;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-void: var(--void);
+  --color-navy: var(--navy);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-blue: var(--blue);
+  --color-violet: var(--violet);
+  --color-cyan: var(--cyan);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--void);
+  color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--void);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
+
+::selection {
+  background: rgba(91, 140, 255, 0.4);
+}
+
+.glass {
+  background: rgba(10, 14, 36, 0.55);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* On a phone the panels cover most of the sky and the star/object labels behind them can show through the
+   translucent glass (backdrop blur is not applied everywhere), so the panels are made more opaque there. */
+@media (max-width: 639px) {
+  .glass { background: rgba(10, 14, 36, 0.88); }
+}
+
+.eyebrow {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.nebula {
+  background:
+    radial-gradient(60% 50% at 78% 18%, rgba(110, 76, 255, 0.28), transparent 70%),
+    radial-gradient(55% 45% at 12% 72%, rgba(40, 110, 255, 0.22), transparent 70%),
+    radial-gradient(40% 30% at 55% 95%, rgba(82, 224, 255, 0.1), transparent 70%),
+    linear-gradient(180deg, var(--void), var(--navy) 60%, var(--void));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Visible keyboard focus everywhere (mouse clicks do not show it). In the base layer so a component's own
+   focus:outline-none (for example an input inside a pill that glows on focus-within) can still win. */
+@layer base {
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--cyan, #52e0ff);
+    outline-offset: 2px;
+  }
+}
+
+@keyframes beyond-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.map-marker { outline: none; cursor: pointer; }
+.map-marker .marker-focus { opacity: 0; }
+.map-marker:focus-visible .marker-focus { opacity: 1; }

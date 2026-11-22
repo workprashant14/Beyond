@@ -1,0 +1,11 @@
+# Phase 4 — data dictionary (in progress)
+
+**Clock value** — days since J2000.0 (JD 2451545.0) in TDB. UTC dates are converted with `jdTdbFromUtc`.
+**StateVector** — `position` km, `velocity` km/s; frame: mean ecliptic and equinox of J2000; heliocentric (`heliocentricState`) or relative to the Solar System barycentre (`barycentricState`).
+**GM_SYSTEM_KM3_S2** — km³/s², planet plus its moons (Earth key = Earth + Moon).
+**FeaturedSpec / FeaturedBody** — `number` (minor-planet number), `name`, `kind` (`dwarf-planet` or `asteroid`). A body is matched in `public/smallbodies/bodies.json` by the leading number and the name of JPL's `full_name`; elements are the SmallBody fields documented in `utils/smallBodies.ts` (a au, e, i deg, om deg, w deg, ma deg at epoch `ep` JD TDB).
+**RegionSpec** — `id` (kuiper, scattered, oort), `kind` (provenance of what is drawn), `rMinAu`/`rMaxAu` (drawn radial extent, au), `dots` (display only), `spreadDeg` (artistic tilt spread, null = spherical), `extent`, `source`, `caveat`. `regionVisualRadius(au)`: display radius in scene units, 8 + 14 sqrt(au) up to 100 au, then +60 log10(au/100).
+**Comet tail** — display only: `tailLengthUnits(rAu)` = 18 x (1 - rAu/3) scene units for rAu < 3, else 0; direction = unit vector from the Sun to the comet (`antiSunward`). `TAIL_CAP` = 80 tails at once.
+**AtmosphereLook** — `color` (hex), `thickness` (fraction of the drawn radius), `strength` (0..1), all artistic. `glowIntensity(cosView, cosSun, strength)` = strength x ((0.75 - |cosView|)/0.75)^3 x (0.15 + 0.85 smoothstep(-0.25, 0.35, cosSun)).
+**Ring shadow** — world space, Sun at the origin; ring plane = centre C (the planet), unit normal N (local +Y tilted by the axial tilt about Z), annulus 1.3 to 2.3 planet radii. Globe point shadowed if the ray to the Sun crosses the plane inside the annulus (loses up to 85% x ring opacity of its direct light); ring point shadowed if the ray to the Sun passes through the planet's sphere (loses up to 90%).
+**ScaleReadout** — `realDistanceKm`, `drawnDistance` (scene units), `realRadiusKm`, `drawnRadius`, `radiusExaggeration` (drawn radius ÷ radius at the same km-to-scene scale as the orbit), `speedKmS` (planets only), `barycentreOffsetKm` (Sun only). `null` means no data, shown as "Data unavailable" or left out.

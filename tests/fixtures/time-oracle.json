@@ -1,0 +1,70 @@
+{
+ "_provenance": "astropy (ERFA) Time(jd, scale='utc') -> tt, tdb",
+ "rows": [
+  {
+   "jd_utc": 2441317.5,
+   "tt_minus_utc": 42.184,
+   "tdb_minus_tt": -8.0466e-05
+  },
+  {
+   "jd_utc": 2441499.5,
+   "tt_minus_utc": 43.183994,
+   "tdb_minus_tt": 8.0466e-05
+  },
+  {
+   "jd_utc": 2443144.5,
+   "tt_minus_utc": 48.184007,
+   "tdb_minus_tt": -8.0466e-05
+  },
+  {
+   "jd_utc": 2446247.5,
+   "tt_minus_utc": 55.18401,
+   "tdb_minus_tt": 8.0466e-05
+  },
+  {
+   "jd_utc": 2451544.5,
+   "tt_minus_utc": 64.184001,
+   "tdb_minus_tt": -0.000120699
+  },
+  {
+   "jd_utc": 2451545.0,
+   "tt_minus_utc": 64.184001,
+   "tdb_minus_tt": -8.0466e-05
+  },
+  {
+   "jd_utc": 2453736.5,
+   "tt_minus_utc": 65.183996,
+   "tdb_minus_tt": -4.0233e-05
+  },
+  {
+   "jd_utc": 2455000.0,
+   "tt_minus_utc": 66.18399,
+   "tdb_minus_tt": 0.000482798
+  },
+  {
+   "jd_utc": 2457204.5,
+   "tt_minus_utc": 68.18402,
+   "tdb_minus_tt": 8.0466e-05
+  },
+  {
+   "jd_utc": 2457754.5,
+   "tt_minus_utc": 69.184014,
+   "tdb_minus_tt": -8.0466e-05
+  },
+  {
+   "jd_utc": 2460000.5,
+   "tt_minus_utc": 69.184014,
+   "tdb_minus_tt": 0.00128746
+  },
+  {
+   "jd_utc": 2461000.5,
+   "tt_minus_utc": 69.184014,
+   "tdb_minus_tt": -0.001166761
+  },
+  {
+   "jd_utc": 2465000.5,
+   "tt_minus_utc": 69.184014,
+   "tdb_minus_tt": -0.001448393
+  }
+ ]
+}

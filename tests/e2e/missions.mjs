@@ -1,0 +1,41 @@
+import { createRequire } from "node:module";
+// Needs production server on :3111. /missions: 7 cards oldest first, elapsed time matches today's date by an independent calculation, signal times, axe, console, mobile.
+const require = createRequire(import.meta.url);
+const { chromium } = require("playwright");
+const axeSrc = require("fs").readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
+const BASE = process.env.BASE ?? "http://localhost:3111";
+const b = await chromium.launch();
+let fail = 0;
+const ok = (c, m) => { console.log((c ? "PASS " : "FAIL ") + m); if (!c) fail++; };
+for (const [name, vp] of [["desktop", { width: 1280, height: 800 }], ["mobile", { width: 375, height: 700 }]]) {
+  const p = await (await b.newContext({ viewport: vp })).newPage();
+  const errs = [];
+  p.on("console", (m) => m.type() === "error" && errs.push(m.text()));
+  p.on("pageerror", (e) => errs.push(String(e)));
+  await p.goto(`${BASE}/missions`, { waitUntil: "load" });
+  await p.getByTestId("elapsed-voyager-1").filter({ hasText: /year/ }).waitFor();
+  const ids = await p.locator("li[data-testid^=mission-]").evaluateAll((els) => els.map((e) => e.dataset.testid.replace("mission-", "")));
+  ok(ids.join() === "voyager-2,voyager-1,hubble,iss,new-horizons,parker-solar-probe,jwst", `${name}: oldest first (${ids.join()})`);
+  const today = await p.evaluate(() => new Date().toISOString().slice(0, 10));
+  const [ty, tm, td] = today.split("-").map(Number);
+  const anniv = (y) => Date.UTC(y, 8, 5);
+  let yrs = ty - 1977 - (Date.UTC(ty, tm - 1, td) < anniv(ty) ? 1 : 0);
+  const days = Math.round((Date.UTC(ty, tm - 1, td) - anniv(1977 + yrs)) / 86400000);
+  const t = await p.getByTestId("elapsed-voyager-1").innerText();
+  ok(t.includes(`${yrs} years and ${days} day`), `${name}: Voyager 1 elapsed "${t.split("\n")[0]}" equals independent ${yrs} y ${days} d`);
+  ok(/22\.8 hours/.test(await p.getByTestId("light-voyager-1").innerText()) && /21 August 2024/.test(await p.getByTestId("light-voyager-1").innerText()), `${name}: Voyager 1 signal 22.8 hours as of 21 August 2024`);
+  ok(/16\.1 hours/.test(await p.getByTestId("light-voyager-2").innerText()), `${name}: Voyager 2 16.1 hours`);
+  ok(/8\.3 hours/.test(await p.getByTestId("light-new-horizons").innerText()) && /rounded/.test(await p.getByTestId("light-new-horizons").innerText()), `${name}: New Horizons 8.3 hours, flagged rounded`);
+  ok(await p.getByTestId("light-jwst").count() === 0, `${name}: no invented signal time for JWST`);
+  ok(/about 36 years/.test(await p.getByTestId("elapsed-hubble").innerText()) === (ty - 1990 === 36), `${name}: Hubble whole years, approximate`);
+  ok(await p.locator("a[href^='/explore?object=']").count() === 7, `${name}: 7 links to Explore`);
+  if (name === "mobile") ok(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "mobile: no horizontal scroll");
+  await p.addScriptTag({ content: axeSrc });
+  const ax = await p.evaluate(() => axe.run(document, { runOnly: ["wcag2a", "wcag2aa"] }));
+  ok(ax.violations.length === 0, `${name}: axe ${ax.violations.map((v) => v.id + ":" + v.nodes.length).join(", ") || "0"}`);
+  ok(errs.length === 0, `${name}: console ${JSON.stringify(errs.slice(0, 2))}`);
+  if (name === "desktop") await p.screenshot({ path: "/tmp/claude-0/missions.png" });
+  await p.context().close();
+}
+await b.close();
+process.exit(fail ? 1 : 0);

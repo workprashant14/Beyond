@@ -1,0 +1,26 @@
+# Runs on every push and pull request: types, lint, unit tests, docs check, production build, then the browser tests.
+# Not run from the machine that wrote it (no GitHub Actions runner there): first run on GitHub may need small fixes.
+name: ci
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Types, lint, unit tests, docs check, build
+        run: npm run verify
+      - name: Browser (Chromium) and astropy for the quasar test
+        run: |
+          npx playwright install --with-deps chromium
+          python3 -m pip install --user astropy numpy
+      - name: Browser tests
+        run: npm run test:e2e

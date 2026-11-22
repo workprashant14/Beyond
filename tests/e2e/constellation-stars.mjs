@@ -1,0 +1,43 @@
+import { createRequire } from "node:module";
+// Needs production server on :3111. Constellation panel: full star list, count matches, a click opens the star.
+const require = createRequire(import.meta.url);
+const { chromium } = require("playwright");
+const axeSrc = require("fs").readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
+const BASE = process.env.BASE ?? "http://localhost:3111";
+const b = await chromium.launch({ args: ["--use-gl=swiftshader", "--enable-unsafe-swiftshader"] });
+let fail = 0;
+const ok = (c, m) => { console.log((c ? "PASS " : "FAIL ") + m); if (!c) fail++; };
+for (const [name, vp] of [["desktop", { width: 1280, height: 800 }], ["mobile", { width: 375, height: 700 }]]) {
+  const p = await (await b.newContext({ viewport: vp })).newPage();
+  const errs = [];
+  p.on("console", (m) => m.type() === "error" && !/WebGL|GPU stall|GL Driver|swiftshader/i.test(m.text()) && errs.push(m.text()));
+  p.on("pageerror", (e) => errs.push(String(e)));
+  await p.goto(`${BASE}/sky?con=Ori`, { waitUntil: "networkidle" });
+  const panel = p.getByRole("complementary", { name: "Constellation information" });
+  await panel.waitFor();
+  const d = p.getByTestId("con-star-list");
+  const sum = await d.locator("summary").innerText();
+  const n = Number(/all (\d+)/i.exec(sum)?.[1]);
+  const stat = await panel.innerText();
+  const row = Number(/Stars in the bundled set\s*(\d+)/.exec(stat)?.[1]);
+  ok(n > 20 && n === row, `${name}: Orion list count ${n} equals the stats row ${row}`);
+  await d.locator("summary").click();
+  const items = await d.locator("li").count();
+  ok(items === n, `${name}: ${items} list items`);
+  const first = await d.locator("li").first().innerText();
+  ok(/Betelgeuse|Rigel/.test(first), `${name}: brightest first (${first.replace(/\s+/g, " ")})`);
+  const mags = (await d.locator("li").allInnerTexts()).map((t) => Number(/mag (-?[\d.]+)/.exec(t)?.[1]));
+  ok(mags.every((m, i) => i === 0 || m >= mags[i - 1]), `${name}: sorted by magnitude`);
+  await d.locator("li button").first().click();
+  await p.getByRole("complementary", { name: "Star information" }).waitFor();
+  ok(true, `${name}: click opens star panel`);
+  await p.goto(`${BASE}/sky?con=Ori`, { waitUntil: "networkidle" });
+  await p.getByTestId("con-star-list").locator("summary").click();
+  if (name === "mobile") ok(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "mobile: no horizontal scroll");
+  await p.addScriptTag({ content: axeSrc });
+  const ax = await p.evaluate(() => axe.run(document, { runOnly: ["wcag2a", "wcag2aa"] }));
+  ok(ax.violations.length === 0, `${name}: axe ${ax.violations.map((v) => v.id + ":" + v.nodes.length).join(", ") || "0 violations"}`);
+  ok(errs.length === 0, `${name}: console errors ${JSON.stringify(errs.slice(0, 3))}`);
+}
+await b.close();
+process.exit(fail ? 1 : 0);

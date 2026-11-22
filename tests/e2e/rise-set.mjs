@@ -1,0 +1,32 @@
+import { createRequire } from "node:module";
+// Needs production server on :3111. Night sky at New Delhi: star panel shows rise/transit/set; absent when night sky is off.
+const require = createRequire(import.meta.url);
+const { chromium } = require("playwright");
+const axeSrc = require("fs").readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
+const BASE = process.env.BASE ?? "http://localhost:3111";
+const b = await chromium.launch({ args: ["--use-gl=swiftshader", "--enable-unsafe-swiftshader"] });
+let fail = 0;
+const ok = (c, m) => { console.log((c ? "PASS " : "FAIL ") + m); if (!c) fail++; };
+const p = await (await b.newContext({ viewport: { width: 1280, height: 800 } })).newPage();
+const errs = [];
+p.on("console", (m) => m.type() === "error" && !/WebGL|GPU stall|GL Driver|swiftshader|Failed to load resource/i.test(m.text()) && errs.push(m.text()));
+p.on("pageerror", (e) => errs.push(String(e)));
+await p.goto(`${BASE}/sky?star=32349`, { waitUntil: "load" }); // Sirius
+let panel = p.getByRole("complementary", { name: "Star information" });
+await panel.waitFor();
+ok(!/Rise · transit · set/i.test(await panel.innerText()), "night sky off: no rise/set row");
+await p.getByRole("button", { name: /Night sky/i }).click();
+const night = p.getByRole("complementary", { name: "Night sky" });
+await night.getByPlaceholder("28.61").fill("28.61");
+await night.getByPlaceholder("77.21").fill("77.21");
+await night.getByRole("button", { name: "Show this sky" }).click();
+await p.waitForTimeout(1000);
+const t = (await p.getByRole("complementary", { name: "Star information" }).innerText()).replace(/\s+/g, " ");
+const m = /Rise (\d\d:\d\d)(?: \(\+\d d\))? · Transit (\d\d:\d\d)(?: \(\+\d d\))? · Set (\d\d:\d\d)/.exec(t);
+ok(!!m && /Estimated/i.test(t) && /no refraction/.test(t), `Sirius from Delhi: ${m ? m[0] : t.slice(0, 200)}`);
+await p.addScriptTag({ content: axeSrc });
+const ax = await p.evaluate(() => axe.run(document, { runOnly: ["wcag2a", "wcag2aa"] }));
+ok(ax.violations.length === 0, `axe ${ax.violations.map((v) => v.id + ":" + v.nodes.length).join(", ") || "0"}`);
+ok(errs.length === 0, `console errors ${JSON.stringify(errs.slice(0, 3))}`);
+await b.close();
+process.exit(fail ? 1 : 0);

@@ -1,0 +1,1613 @@
+[
+  {
+    "id": "sun",
+    "name": "Sun",
+    "category": "star",
+    "summary": "The G-type star at the centre of our Solar System.",
+    "diameter": "1,391,400 km",
+    "distance": "1 AU from Earth",
+    "orbitalPeriod": null,
+    "keywords": [
+      "star",
+      "sol"
+    ],
+    "related": [
+      "earth",
+      "mercury"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      },
+      {
+        "label": "NASA Planetary Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      }
+    ],
+    "featured": false,
+    "popular": true,
+    "mass": "1.989 × 10³⁰ kg",
+    "rotationPeriod": "about 25 days (at the equator)",
+    "discovery": "Known since antiquity",
+    "composition": "About 73% hydrogen and 25% helium by mass",
+    "temperature": "About 5,500 °C (visible surface, photosphere)"
+  },
+  {
+    "id": "mercury",
+    "name": "Mercury",
+    "category": "planet",
+    "summary": "Smallest planet and the closest to the Sun.",
+    "diameter": "4,879 km",
+    "distance": "0.39 AU from the Sun",
+    "orbitalPeriod": "88 Earth days",
+    "keywords": [
+      "rocky",
+      "inner planet"
+    ],
+    "related": [
+      "sun",
+      "venus"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      },
+      {
+        "label": "NASA Planetary Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      }
+    ],
+    "popular": false,
+    "mass": "3.301 × 10²³ kg",
+    "rotationPeriod": "58.6 Earth days",
+    "discovery": "Known since antiquity",
+    "composition": "Rocky planet with a large metallic core",
+    "temperature": "167 °C (mean surface)"
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "category": "planet",
+    "summary": "Rocky planet wrapped in a thick, heat-trapping atmosphere.",
+    "diameter": "12,104 km",
+    "distance": "0.72 AU from the Sun",
+    "orbitalPeriod": "225 Earth days",
+    "keywords": [
+      "rocky",
+      "inner planet"
+    ],
+    "related": [
+      "earth",
+      "mercury"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      },
+      {
+        "label": "NASA Planetary Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      }
+    ],
+    "popular": false,
+    "mass": "4.867 × 10²⁴ kg",
+    "rotationPeriod": "243 Earth days (retrograde)",
+    "discovery": "Known since antiquity",
+    "composition": "Rocky planet; atmosphere mostly carbon dioxide",
+    "temperature": "464 °C (mean surface)"
+  },
+  {
+    "id": "earth",
+    "name": "Earth",
+    "category": "planet",
+    "summary": "Our home world and the only place known to harbour life.",
+    "diameter": "12,742 km",
+    "distance": "1.00 AU from the Sun",
+    "orbitalPeriod": "365.25 days",
+    "keywords": [
+      "home",
+      "blue planet"
+    ],
+    "related": [
+      "moon",
+      "sun",
+      "mars"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      },
+      {
+        "label": "NASA Planetary Fact Sheet",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+      }
+    ],
+    "popular": true,
+    "mass": "5.972 × 10²⁴ kg",
+    "rotationPeriod": "23 h 56 min",
+    "discovery": "Known since antiquity",
+    "composition": "Rocky planet: iron-nickel core, silicate mantle and crust",
+    "temperature": "15 °C (mean surface)"
+  },
+  {
+    "id": "mars",
+    "name": "Mars",
+    "category": "planet",
+    "summary": "Cold desert planet with the tallest volcano in the Solar System.",
+    "diameter": "6,779 km",
+    "distance": "1.52 AU from the Sun",
+    "orbitalPeriod": "687 Earth days",
+    "keywords": [
+      "red planet"
+    ],
+    "related": [
+      "earth",
+      "jupiter"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "popular": true,
+    "mass": "6.417 × 10²³ kg",
+    "rotationPeriod": "24 h 37 min",
+    "discovery": "Known since antiquity",
+    "composition": "Rocky planet; thin carbon dioxide atmosphere",
+    "temperature": null
+  },
+  {
+    "id": "jupiter",
+    "name": "Jupiter",
+    "category": "planet",
+    "summary": "Largest planet; a gas giant with a Great Red Spot storm.",
+    "diameter": "139,820 km",
+    "distance": "5.20 AU from the Sun",
+    "orbitalPeriod": "11.9 Earth years",
+    "keywords": [
+      "gas giant"
+    ],
+    "related": [
+      "saturn",
+      "mars",
+      "io",
+      "europa",
+      "ganymede",
+      "callisto"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "popular": true,
+    "mass": "1.898 × 10²⁷ kg",
+    "rotationPeriod": "about 9 h 56 min",
+    "discovery": "Known since antiquity",
+    "composition": "Mostly hydrogen and helium",
+    "temperature": null
+  },
+  {
+    "id": "saturn",
+    "name": "Saturn",
+    "category": "planet",
+    "summary": "Gas giant best known for its extensive ring system.",
+    "diameter": "116,460 km",
+    "distance": "9.54 AU from the Sun",
+    "orbitalPeriod": "29.4 Earth years",
+    "keywords": [
+      "gas giant",
+      "rings"
+    ],
+    "related": [
+      "jupiter",
+      "uranus",
+      "titan"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "popular": true,
+    "mass": "5.683 × 10²⁶ kg",
+    "rotationPeriod": "about 10 h 39 min",
+    "discovery": "Known since antiquity",
+    "composition": "Mostly hydrogen and helium",
+    "temperature": null
+  },
+  {
+    "id": "uranus",
+    "name": "Uranus",
+    "category": "planet",
+    "summary": "Ice giant that rotates on its side.",
+    "diameter": "50,724 km",
+    "distance": "19.2 AU from the Sun",
+    "orbitalPeriod": "84 Earth years",
+    "keywords": [
+      "ice giant"
+    ],
+    "related": [
+      "saturn",
+      "neptune"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "popular": false,
+    "mass": "8.681 × 10²⁵ kg",
+    "rotationPeriod": "17 h 14 min (retrograde)",
+    "discovery": "Discovered 13 March 1781 by William Herschel",
+    "composition": "Hydrogen and helium over icy materials (water, ammonia, methane)",
+    "temperature": null
+  },
+  {
+    "id": "neptune",
+    "name": "Neptune",
+    "category": "planet",
+    "summary": "Distant ice giant with supersonic winds.",
+    "diameter": "49,244 km",
+    "distance": "30.1 AU from the Sun",
+    "orbitalPeriod": "165 Earth years",
+    "keywords": [
+      "ice giant"
+    ],
+    "related": [
+      "uranus"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "popular": false,
+    "mass": "1.024 × 10²⁶ kg",
+    "rotationPeriod": "about 16 h 6 min",
+    "discovery": "Identified 23 September 1846 by Johann Galle, from predictions by Urbain Le Verrier (John Couch Adams made independent predictions)",
+    "composition": "Hydrogen and helium over icy materials (water, ammonia, methane)",
+    "temperature": null
+  },
+  {
+    "id": "moon",
+    "name": "Moon",
+    "category": "moon",
+    "summary": "Earth's only natural satellite.",
+    "diameter": "3,475 km",
+    "distance": "about 384,400 km from Earth",
+    "orbitalPeriod": "27.3 Earth days",
+    "keywords": [
+      "luna",
+      "satellite"
+    ],
+    "related": [
+      "earth"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "popular": true,
+    "mass": "7.346 × 10²² kg",
+    "rotationPeriod": "27.3 Earth days (tidally locked)",
+    "discovery": "Known since antiquity",
+    "composition": "Rocky: silicate crust and mantle, small iron core",
+    "temperature": null
+  },
+  {
+    "id": "ceres",
+    "name": "Ceres",
+    "category": "dwarf-planet",
+    "summary": "Largest object in the main asteroid belt, classified as a dwarf planet.",
+    "diameter": "about 940 km",
+    "distance": "about 2.77 AU from the Sun",
+    "orbitalPeriod": null,
+    "keywords": [
+      "asteroid",
+      "dwarf planet"
+    ],
+    "related": [
+      "jupiter",
+      "mars"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": "Discovered 1 January 1801 by Giuseppe Piazzi",
+    "composition": "Mixture of rock and water ice",
+    "temperature": null
+  },
+  {
+    "id": "halley",
+    "name": "Halley's Comet",
+    "category": "comet",
+    "summary": "Famous periodic comet visible from Earth about every 76 years.",
+    "diameter": null,
+    "distance": null,
+    "orbitalPeriod": "about 76 years",
+    "keywords": [
+      "comet",
+      "1P"
+    ],
+    "related": [
+      "sun"
+    ],
+    "sources": [
+      {
+        "label": "NASA JPL Small-Body Database",
+        "url": "https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html"
+      }
+    ],
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": "Observed since at least 240 BCE; its return was predicted by Edmond Halley (1705)",
+    "composition": "Ice, dust and rock (comet nucleus)",
+    "temperature": null
+  },
+  {
+    "id": "milky-way",
+    "name": "Milky Way",
+    "category": "galaxy",
+    "summary": "The barred spiral galaxy that contains our Solar System.",
+    "diameter": "roughly 100,000 light-years",
+    "distance": "Home galaxy",
+    "orbitalPeriod": null,
+    "keywords": [
+      "galaxy",
+      "home",
+      "spiral"
+    ],
+    "related": [
+      "solar-system",
+      "sgr-a",
+      "andromeda"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ],
+    "featured": true,
+    "popular": true,
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": null,
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "andromeda",
+    "name": "Andromeda Galaxy",
+    "category": "galaxy",
+    "summary": "Nearest large spiral galaxy to the Milky Way (M31).",
+    "diameter": null,
+    "distance": "about 2.5 million light-years",
+    "orbitalPeriod": null,
+    "keywords": [
+      "m31",
+      "galaxy",
+      "spiral"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ],
+    "featured": true,
+    "popular": true,
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": "Recorded by the Persian astronomer Al-Sufi around 964 CE; shown to lie outside the Milky Way by Edwin Hubble in the 1920s",
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "orion-nebula",
+    "name": "Orion Nebula",
+    "category": "nebula",
+    "summary": "Bright star-forming nebula in Orion's sword (M42).",
+    "diameter": null,
+    "distance": "about 1,300 light-years",
+    "orbitalPeriod": null,
+    "keywords": [
+      "m42",
+      "nebula",
+      "star formation"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ],
+    "featured": true,
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": null,
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "crab-nebula",
+    "name": "Crab Nebula",
+    "category": "nebula",
+    "summary": "Supernova remnant in Taurus from a star observed exploding in 1054 CE (M1).",
+    "diameter": null,
+    "distance": "about 6,500 light-years",
+    "orbitalPeriod": null,
+    "keywords": [
+      "m1",
+      "nebula",
+      "supernova"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ],
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": "Supernova recorded in 1054 CE; first catalogued as M1 by Charles Messier (1758)",
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "sgr-a",
+    "name": "Sagittarius A*",
+    "category": "black-hole",
+    "summary": "Supermassive black hole at the centre of the Milky Way.",
+    "diameter": null,
+    "distance": "about 26,000 light-years",
+    "orbitalPeriod": null,
+    "keywords": [
+      "black hole",
+      "sgr a",
+      "supermassive"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      },
+      {
+        "label": "GRAVITY Collaboration 2022, Astronomy & Astrophysics: stellar orbits around Sgr A*",
+        "url": "https://www.aanda.org/10.1051/0004-6361/202142465"
+      }
+    ],
+    "featured": true,
+    "popular": true,
+    "mass": "about 4.3 million solar masses",
+    "rotationPeriod": null,
+    "discovery": "Compact radio source Sagittarius A* discovered in 1974 (Bruce Balick and Robert Brown)",
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "m87",
+    "name": "M87*",
+    "category": "black-hole",
+    "summary": "Supermassive black hole in galaxy M87, the first ever imaged (2019, Event Horizon Telescope).",
+    "diameter": null,
+    "distance": "about 55 million light-years",
+    "orbitalPeriod": null,
+    "keywords": [
+      "black hole",
+      "eht",
+      "supermassive"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      },
+      {
+        "label": "Physics World report of the Event Horizon Telescope result (April 2019)",
+        "url": "https://physicsworld.com/a/first-images-of-a-black-hole-unveiled-by-astronomers-in-landmark-discovery/"
+      }
+    ],
+    "mass": "about 6.5 billion solar masses",
+    "rotationPeriod": null,
+    "discovery": "First black hole imaged: Event Horizon Telescope results published in April 2019",
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "proxima-b",
+    "name": "Proxima Centauri b",
+    "category": "exoplanet",
+    "summary": "Exoplanet orbiting Proxima Centauri, the closest known star to the Sun.",
+    "diameter": null,
+    "distance": "about 4.2 light-years",
+    "orbitalPeriod": "about 11.2 Earth days",
+    "keywords": [
+      "exoplanet",
+      "proxima",
+      "habitable zone"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Exoplanet Archive",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/"
+      }
+    ],
+    "featured": true,
+    "popular": true,
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": "Announced in August 2016 (ESO Pale Red Dot campaign)",
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "trappist-1e",
+    "name": "TRAPPIST-1 e",
+    "category": "exoplanet",
+    "summary": "Rocky exoplanet in the TRAPPIST-1 system, in the star's habitable zone.",
+    "diameter": null,
+    "distance": "about 40 light-years",
+    "orbitalPeriod": null,
+    "keywords": [
+      "exoplanet",
+      "trappist",
+      "rocky"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Exoplanet Archive",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/"
+      }
+    ],
+    "mass": null,
+    "rotationPeriod": null,
+    "discovery": "Announced in February 2017 with the TRAPPIST-1 system (Gillon et al.)",
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "id": "solar-system",
+    "name": "Solar System",
+    "category": "system",
+    "summary": "The Sun and everything bound to it: eight planets, their moons, dwarf planets, asteroids and comets.",
+    "diameter": null,
+    "distance": "about 26,000 light-years from the Milky Way's centre",
+    "orbitalPeriod": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "featured": false,
+    "popular": false,
+    "keywords": [
+      "solar system",
+      "sol",
+      "planets",
+      "planetary system"
+    ],
+    "related": [
+      "sun",
+      "earth",
+      "jupiter",
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Solar System Exploration",
+        "url": "https://science.nasa.gov/solar-system/"
+      }
+    ],
+    "discovery": null,
+    "composition": null,
+    "temperature": null
+  },
+  {
+    "diameter": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": null,
+    "discovery": "Described by Giovanni Battista Hodierna before 1654; catalogued by Charles Messier in 1764",
+    "id": "triangulum",
+    "name": "Triangulum Galaxy",
+    "category": "galaxy",
+    "summary": "Third-largest galaxy of the Local Group, after Andromeda and the Milky Way (M33).",
+    "distance": "about 2.7 million light-years",
+    "keywords": [
+      "m33",
+      "galaxy",
+      "spiral",
+      "local group"
+    ],
+    "related": [
+      "andromeda",
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ]
+  },
+  {
+    "diameter": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": null,
+    "discovery": "Known since antiquity to observers in the Southern Hemisphere",
+    "id": "lmc",
+    "name": "Large Magellanic Cloud",
+    "category": "galaxy",
+    "summary": "Satellite galaxy of the Milky Way, visible to the naked eye from the Southern Hemisphere.",
+    "distance": "about 160,000 light-years",
+    "keywords": [
+      "lmc",
+      "magellanic",
+      "dwarf galaxy",
+      "satellite"
+    ],
+    "related": [
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ]
+  },
+  {
+    "diameter": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": null,
+    "discovery": "Discovered by Jean-Philippe de Chéseaux in 1745-46; catalogued by Charles Messier in 1764",
+    "id": "eagle-nebula",
+    "name": "Eagle Nebula",
+    "category": "nebula",
+    "summary": "Star-forming nebula in Serpens containing the Pillars of Creation (M16).",
+    "distance": "about 7,000 light-years",
+    "keywords": [
+      "m16",
+      "nebula",
+      "pillars of creation",
+      "star forming"
+    ],
+    "related": [
+      "milky-way",
+      "orion-nebula"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Universe",
+        "url": "https://science.nasa.gov/universe/"
+      }
+    ]
+  },
+  {
+    "diameter": null,
+    "mass": "about 21 solar masses",
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": null,
+    "discovery": "X-ray source detected in 1964 by a rocket-borne instrument",
+    "id": "cygnus-x1",
+    "name": "Cygnus X-1",
+    "category": "black-hole",
+    "summary": "One of the first strong black hole candidates, a stellar-mass black hole in a binary system.",
+    "distance": "about 7,000 light-years",
+    "keywords": [
+      "cygnus",
+      "x-ray",
+      "stellar black hole",
+      "binary"
+    ],
+    "related": [
+      "sgr-a",
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Black Holes",
+        "url": "https://science.nasa.gov/universe/black-holes/"
+      },
+      {
+        "label": "Miller-Jones et al. 2021, Science (arXiv 2102.09091): Cygnus X-1 contains a 21-solar mass black hole",
+        "url": "https://arxiv.org/abs/2102.09091v1"
+      }
+    ]
+  },
+  {
+    "diameter": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": "about 4.2 days",
+    "discovery": "Michel Mayor and Didier Queloz, 1995",
+    "id": "51-pegasi-b",
+    "name": "51 Pegasi b",
+    "category": "exoplanet",
+    "summary": "First exoplanet confirmed around a Sun-like star.",
+    "distance": "about 50 light-years",
+    "keywords": [
+      "51 peg",
+      "hot jupiter",
+      "exoplanet"
+    ],
+    "related": [
+      "proxima-b",
+      "trappist-1e"
+    ],
+    "sources": [
+      {
+        "label": "NASA Exoplanet Archive",
+        "url": "https://exoplanetarchive.ipac.caltech.edu/"
+      }
+    ]
+  },
+  {
+    "diameter": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": null,
+    "discovery": "Known since antiquity; its white dwarf companion Sirius B was first observed by Alvan Graham Clark in 1862",
+    "id": "sirius",
+    "name": "Sirius",
+    "category": "star",
+    "summary": "Brightest star in Earth's night sky, a binary system in Canis Major.",
+    "distance": "about 8.6 light-years",
+    "keywords": [
+      "dog star",
+      "canis major",
+      "binary",
+      "brightest star"
+    ],
+    "related": [
+      "sun",
+      "milky-way"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Stars",
+        "url": "https://science.nasa.gov/universe/stars/"
+      }
+    ]
+  },
+  {
+    "diameter": "about 2,377 km",
+    "mass": "about 1.3 × 10²² kg",
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "orbitalPeriod": "about 248 Earth years",
+    "discovery": "Clyde Tombaugh, Lowell Observatory, 1930",
+    "id": "pluto",
+    "name": "Pluto",
+    "category": "dwarf-planet",
+    "summary": "Dwarf planet in the Kuiper Belt, reclassified from planet in 2006.",
+    "keywords": [
+      "kuiper belt",
+      "new horizons",
+      "dwarf planet"
+    ],
+    "related": [
+      "ceres",
+      "neptune",
+      "solar-system"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Pluto",
+        "url": "https://science.nasa.gov/dwarf-planets/pluto/"
+      }
+    ],
+    "distance": "about 39.5 AU from the Sun on average (about 5.9 billion km)"
+  },
+  {
+    "id": "eris",
+    "name": "Eris",
+    "category": "dwarf-planet",
+    "summary": "One of the five dwarf planets the IAU has recognised, with a very small moon called Dysnomia.",
+    "diameter": "about 2,400 km (equatorial)",
+    "distance": "about 68 AU from the Sun",
+    "mass": null,
+    "rotationPeriod": "25.9 hours",
+    "temperature": null,
+    "composition": "Most likely a rocky surface similar to Pluto's; internal structure largely unknown",
+    "discovery": "Announced 5 Jan 2005, from Palomar Observatory survey data of 21 Oct 2003 (Mike Brown, Chad Trujillo, David Rabinowitz)",
+    "orbitalPeriod": "557 Earth years",
+    "keywords": [
+      "dwarf planet",
+      "trans-neptunian",
+      "dysnomia",
+      "2003 UB313"
+    ],
+    "related": [
+      "pluto",
+      "kuiper-belt"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Eris",
+        "url": "https://science.nasa.gov/dwarf-planets/eris/"
+      }
+    ]
+  },
+  {
+    "id": "haumea",
+    "name": "Haumea",
+    "category": "dwarf-planet",
+    "summary": "Oval, football-shaped dwarf planet that spins about once every 4 hours, with two known moons: Namaka and Hi'iaka.",
+    "diameter": "about 1,740 km (equatorial)",
+    "distance": "43 AU from the Sun (average distance)",
+    "mass": null,
+    "rotationPeriod": "about 4 hours",
+    "temperature": null,
+    "composition": "Believed to be rock with a coating of ice; surface little known",
+    "discovery": "Disputed: two teams claim credit (observations from 2003 and 2004); the listed discovery site is Sierra Nevada Observatory, Spain, 7 Mar 2003, with no official discoverer",
+    "orbitalPeriod": "285 Earth years",
+    "keywords": [
+      "dwarf planet",
+      "trans-neptunian",
+      "namaka",
+      "hiiaka"
+    ],
+    "related": [
+      "pluto",
+      "kuiper-belt"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Haumea",
+        "url": "https://science.nasa.gov/dwarf-planets/haumea/"
+      }
+    ]
+  },
+  {
+    "id": "makemake",
+    "name": "Makemake",
+    "category": "dwarf-planet",
+    "summary": "Reddish-brown dwarf planet slightly smaller than Pluto, with one provisional moon nicknamed MK 2.",
+    "diameter": "about 1,430 km",
+    "distance": "45.8 AU from the Sun (average distance)",
+    "mass": null,
+    "rotationPeriod": "about 22.5 hours",
+    "temperature": null,
+    "composition": "Frozen methane and ethane detected on its surface",
+    "discovery": "First observed in March 2005 by M.E. Brown, C.A. Trujillo and D.L. Rabinowitz at Palomar Observatory",
+    "orbitalPeriod": "305 Earth years",
+    "keywords": [
+      "dwarf planet",
+      "trans-neptunian",
+      "mk 2"
+    ],
+    "related": [
+      "pluto",
+      "kuiper-belt"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Makemake",
+        "url": "https://science.nasa.gov/dwarf-planets/makemake/"
+      }
+    ]
+  },
+  {
+    "id": "vesta",
+    "name": "Vesta",
+    "category": "asteroid",
+    "summary": "Second most massive body in the main asteroid belt; NASA's Dawn spacecraft orbited it from July 2011 to September 2012.",
+    "diameter": null,
+    "distance": null,
+    "mass": "almost 9% of the combined mass of all asteroids",
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": "Separated into crust, mantle and core, unlike most known asteroids",
+    "discovery": "Discovered at Bremen, Germany, on 29 Mar 1807 by Heinrich Wilhelm Olbers",
+    "orbitalPeriod": null,
+    "keywords": [
+      "asteroid",
+      "4 vesta",
+      "dawn",
+      "main belt"
+    ],
+    "related": [
+      "ceres",
+      "asteroid-belt"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: 4 Vesta",
+        "url": "https://science.nasa.gov/solar-system/asteroids/4-vesta/"
+      }
+    ]
+  },
+  {
+    "id": "67p",
+    "name": "Comet 67P/Churyumov-Gerasimenko",
+    "category": "comet",
+    "summary": "Comet studied up close by ESA's Rosetta, which rendezvoused with it in August 2014 and ended its mission with a controlled impact on 30 Sep 2016.",
+    "diameter": null,
+    "distance": "closest approach to the Sun about 1.3 AU since 1959",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": "Nucleus thought to be quite porous, with a density much lower than water; Rosetta found exposed water ice, glycine and phosphorus",
+    "discovery": "Discovered 22 Oct 1969 at Alma-Ata Observatory, Russia, by Klim Churyumov examining a photographic plate",
+    "orbitalPeriod": null,
+    "keywords": [
+      "comet",
+      "67p",
+      "rosetta",
+      "philae",
+      "churyumov"
+    ],
+    "related": [
+      "halley"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: 67P/Churyumov-Gerasimenko",
+        "url": "https://science.nasa.gov/solar-system/comets/67p-churyumov-gerasimenko/"
+      }
+    ]
+  },
+  {
+    "id": "asteroid-belt",
+    "name": "Main asteroid belt",
+    "category": "region",
+    "summary": "Region between Mars and Jupiter where most asteroids orbit; the combined mass of all asteroids is less than that of Earth's Moon.",
+    "diameter": null,
+    "distance": null,
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": "Three broad classes: C-type (chondrite, most common), S-type (silicates and nickel-iron) and M-type (metallic nickel-iron)",
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "asteroids",
+      "main belt"
+    ],
+    "related": [
+      "ceres",
+      "vesta",
+      "jupiter",
+      "mars"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Asteroid Facts",
+        "url": "https://science.nasa.gov/solar-system/asteroids/facts/"
+      }
+    ],
+    "caveat": "Observed: the belt is estimated to hold between 1.1 and 1.9 million asteroids larger than 1 km (an estimate, not a count). The belt's edges in AU are not given by the cited NASA page, so none are shown."
+  },
+  {
+    "id": "kuiper-belt",
+    "name": "Kuiper Belt",
+    "category": "region",
+    "summary": "Doughnut-shaped region of icy bodies beyond Neptune; more than 2,000 trans-Neptunian objects have been cataloged.",
+    "diameter": null,
+    "distance": "inner edge about 30 AU (Neptune's orbit); main region ends around 50 AU",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": "Rock, water ice and other frozen compounds",
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "trans-neptunian",
+      "kbo",
+      "icy bodies",
+      "beyond neptune"
+    ],
+    "related": [
+      "pluto",
+      "eris",
+      "haumea",
+      "makemake",
+      "neptune"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Kuiper Belt facts",
+        "url": "https://science.nasa.gov/solar-system/kuiper-belt/facts/"
+      }
+    ],
+    "caveat": "Individual objects are observed; the region's boundaries and total population are estimates. NASA describes the main region as about 30 to 50 AU, with scattered and detached objects reaching much farther. Not drawn to scale in this site."
+  },
+  {
+    "id": "oort-cloud",
+    "name": "Oort Cloud",
+    "category": "region",
+    "summary": "A theorized, thick bubble of distant icy debris surrounding the solar system.",
+    "diameter": null,
+    "distance": "inner edge thought to be 2,000 to 5,000 AU from the Sun; outer edge somewhere between 10,000 and 100,000 AU",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": "Icy debris; planetesimals formed from the same material as the planets",
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "comets",
+      "long-period comets",
+      "icy shell",
+      "theorized"
+    ],
+    "related": [
+      "kuiper-belt",
+      "halley"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Oort Cloud facts",
+        "url": "https://science.nasa.gov/solar-system/oort-cloud/facts"
+      }
+    ],
+    "caveat": "THEORETICAL: the Oort Cloud has not been mapped. Its size, shape and the hundreds of billions to trillions of bodies NASA says it may contain are model-based, not observed. Any drawing of it is conceptual."
+  },
+  {
+    "id": "voyager-1",
+    "name": "Voyager 1",
+    "category": "spacecraft",
+    "summary": "Exited the heliosphere on 25 Aug 2012 and entered interstellar space; flew past Jupiter (5 Mar 1979) and Saturn (12 Nov 1980). NASA lists it as an Active Mission (Extended Mission).",
+    "diameter": null,
+    "distance": "164.7 AU from Earth on 21 Aug 2024; 17.0 km/s relative to the Sun on that date (NASA's latest stated figures)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "5 Sep 1977, 12:56:01 UT, Titan IIIE-Centaur from Cape Canaveral, Launch Complex 41",
+    "orbitalPeriod": null,
+    "keywords": [
+      "voyager",
+      "interstellar",
+      "probe",
+      "spacecraft",
+      "1977"
+    ],
+    "related": [
+      "voyager-2",
+      "jupiter",
+      "saturn"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Voyager 1",
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/"
+      }
+    ],
+    "caveat": "Figures are NASA's stated values for the date given on its page, not live. NASA's page gives conflicting counts of working science instruments (four in one passage, two in another), so no count is stated here."
+  },
+  {
+    "id": "voyager-2",
+    "name": "Voyager 2",
+    "category": "spacecraft",
+    "summary": "The only spacecraft to visit all four giant planets: Jupiter (9 Jul 1979), Saturn (25 Aug 1981 in NASA's table), Uranus (24 Jan 1986) and Neptune (25 Aug 1989). Entered interstellar space in Nov or Dec 2018.",
+    "diameter": null,
+    "distance": "116.167 AU from Earth on 5 Nov 2017 (about 17.378 billion km); 15.4 km/s relative to the Sun (date not given)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "20 Aug 1977, 14:29:44 UT, Titan IIIE-Centaur from Cape Canaveral, Launch Complex 41",
+    "orbitalPeriod": null,
+    "keywords": [
+      "voyager",
+      "interstellar",
+      "probe",
+      "spacecraft",
+      "1977",
+      "neptune",
+      "uranus"
+    ],
+    "related": [
+      "voyager-1",
+      "jupiter",
+      "saturn",
+      "uranus",
+      "neptune"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Voyager 2",
+        "url": "https://science.nasa.gov/mission/voyager/voyager-2/"
+      }
+    ],
+    "caveat": "Figures are NASA's stated values for the date given on its page, not live. NASA's page contradicts itself on two dates: interstellar entry is 25 Nov 2018 in its key-dates table but 10 Dec 2018 in its text, and Saturn closest approach is 25 Aug 1981 in the table but 01:21 UT on 26 Aug in the text. Both are shown or flagged rather than choosing one silently."
+  },
+  {
+    "id": "jwst",
+    "name": "James Webb Space Telescope",
+    "category": "spacecraft",
+    "summary": "Joint NASA/ESA/CSA space telescope with a large, segmented, gold-coated mirror that observes the sky in the near- and mid-infrared. NASA lists it as an Active Mission.",
+    "diameter": null,
+    "distance": "orbits the Sun about 1.5 million km (1 million miles) from Earth, at the second Lagrange point (L2)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "25 Dec 2021, from ESA's launch facility in French Guiana",
+    "orbitalPeriod": null,
+    "keywords": [
+      "webb",
+      "jwst",
+      "telescope",
+      "infrared",
+      "l2",
+      "spacecraft"
+    ],
+    "related": [
+      "earth",
+      "hubble"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: James Webb Space Telescope",
+        "url": "https://science.nasa.gov/mission/webb/"
+      }
+    ],
+    "caveat": "The launch vehicle, mirror diameter and exact wavelength range are not stated on the NASA page used, so they are not given here."
+  },
+  {
+    "id": "hubble",
+    "name": "Hubble Space Telescope",
+    "category": "spacecraft",
+    "summary": "Space telescope launched and deployed by space shuttle Discovery in 1990, sensitive to ultraviolet through infrared light (115 to 2500 nm), with a 2.4 m primary mirror. Five astronaut servicing missions visited it.",
+    "diameter": null,
+    "distance": "orbits about 483 km (300 miles) above Earth's surface, inclined 28.5 degrees to the equator",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "1990, deployed by space shuttle Discovery (exact date not on the NASA page used)",
+    "orbitalPeriod": "about 95 minutes",
+    "keywords": [
+      "hubble",
+      "hst",
+      "telescope",
+      "orbit",
+      "spacecraft"
+    ],
+    "related": [
+      "earth",
+      "jwst"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: About Hubble",
+        "url": "https://science.nasa.gov/mission/hubble/overview/about-hubble/"
+      }
+    ],
+    "caveat": "NASA's page has no mission-status label; it says Hubble has made observations for more than 36 years and will continue for years to come."
+  },
+  {
+    "id": "parker-solar-probe",
+    "name": "Parker Solar Probe",
+    "category": "spacecraft",
+    "summary": "Mission to trace the flow of energy, study the heating of the solar corona and explore what accelerates the solar wind. NASA lists it as Primary Mission in Progress.",
+    "diameter": null,
+    "distance": "closest approach about 6.2 million km (3.9 million miles) from the Sun; about 700,000 km/h (430,000 mph) at closest approach",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "12 Aug 2018, 7:31 UTC, Delta IV-Heavy from Cape Canaveral Air Force Station, Florida",
+    "orbitalPeriod": null,
+    "keywords": [
+      "parker",
+      "solar probe",
+      "sun",
+      "corona",
+      "spacecraft"
+    ],
+    "related": [
+      "sun"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Parker Solar Probe",
+        "url": "https://science.nasa.gov/mission/parker-solar-probe/"
+      }
+    ],
+    "caveat": "Figures are NASA's stated values for the date given on its page, not live. NASA's page states the closest-approach distance two ways: about 6.2 million km from the Sun, and elsewhere about 6.5 million km from the Sun's surface. Both come from NASA; they are not reconciled here."
+  },
+  {
+    "id": "new-horizons",
+    "name": "New Horizons",
+    "category": "spacecraft",
+    "summary": "Flew past Pluto on 14 Jul 2015 (11:49 UT) and past Arrokoth on 1 Jan 2019, which NASA calls the most distant target in history. NASA lists it as an Active Mission.",
+    "diameter": null,
+    "distance": "60 times as far from the Sun as Earth is, on 1 Oct 2024 (NASA's latest stated figure)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "19 Jan 2006, 19:00:00 UT, Atlas V 551 from Cape Canaveral, Launch Complex 41",
+    "orbitalPeriod": null,
+    "keywords": [
+      "new horizons",
+      "pluto",
+      "arrokoth",
+      "kuiper belt",
+      "spacecraft"
+    ],
+    "related": [
+      "pluto",
+      "kuiper-belt"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: New Horizons",
+        "url": "https://science.nasa.gov/mission/new-horizons/"
+      }
+    ],
+    "caveat": "Figures are NASA's stated values for the date given on its page, not live. NASA's page gives two different Pluto closest-approach distances (about 7,800 km in the text, 12,500 km in a caption), so none is stated here."
+  },
+  {
+    "id": "iss",
+    "name": "International Space Station",
+    "category": "spacecraft",
+    "summary": "Crewed space station in low Earth orbit. Construction began in November 1998 and the first crew arrived in October 2000.",
+    "diameter": null,
+    "distance": "about 400 km (200 nautical miles) above Earth",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": "Construction began November 1998; first crew members arrived October 2000",
+    "orbitalPeriod": "approximately 91 to 93 minutes",
+    "keywords": [
+      "iss",
+      "space station",
+      "low earth orbit",
+      "spacecraft"
+    ],
+    "related": [
+      "earth"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Human Spaceflight Factsheet",
+        "url": "https://science.nasa.gov/earth/earth-observatory/human-spaceflight-factsheet/"
+      }
+    ],
+    "caveat": "Speed, mass, size and the exact first-module date are not on the NASA page used, so they are not given here. The orbit changes slightly over time."
+  },
+  {
+    "id": "crab-pulsar",
+    "name": "Crab Pulsar",
+    "category": "pulsar",
+    "summary": "The neutron star at the very center of the Crab Nebula. NASA calls it the archetype of the rapidly spinning neutron stars known as pulsars.",
+    "diameter": "only a few miles across",
+    "distance": "the Crab Nebula is 6,500 light-years away, in the constellation Taurus",
+    "mass": "about the same mass as the Sun",
+    "rotationPeriod": "spinning 30 times a second",
+    "temperature": null,
+    "composition": "A neutron star: a very dense, highly magnetic remnant of a collapsed star",
+    "discovery": "The Crab supernova was recorded by Chinese astronomers in 1054 A.D.",
+    "orbitalPeriod": null,
+    "keywords": [
+      "pulsar",
+      "neutron star",
+      "crab",
+      "taurus",
+      "supernova remnant"
+    ],
+    "related": [
+      "crab-nebula"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Hubble captures the beating heart of the Crab Nebula",
+        "url": "https://science.nasa.gov/missions/hubble/hubble-captures-the-beating-heart-of-the-crab-nebula/"
+      },
+      {
+        "label": "NASA Science: Pulsars",
+        "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-pulsars/"
+      }
+    ],
+    "caveat": "Observed, as NASA states it in rounded words. NASA's page gives no spin period, exact size or separate distance for the pulsar itself (the distance is the nebula's), and none is added here."
+  },
+  {
+    "id": "psr-j1748-2446ad",
+    "name": "PSR J1748-2446ad",
+    "category": "pulsar",
+    "summary": "NASA's neutron-star page calls it the fastest known pulsar.",
+    "diameter": null,
+    "distance": null,
+    "mass": null,
+    "rotationPeriod": "spins 43,000 times every minute",
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "pulsar",
+      "millisecond pulsar",
+      "fastest",
+      "neutron star"
+    ],
+    "related": [
+      "crab-pulsar"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Neutron Stars Are Weird!",
+        "url": "https://science.nasa.gov/universe/neutron-stars-are-weird/"
+      }
+    ],
+    "caveat": "NASA's page gives only this spin rate. Its position, distance, mass and discovery are not stated there, so none are given here. 'Fastest known' is NASA's wording as of the page's Aug 2026 update."
+  },
+  {
+    "id": "3c-273",
+    "name": "3C 273",
+    "category": "quasar",
+    "summary": "The first quasar ever identified, found in the early 1960s by astronomer Allan Sandage. It lies in Virgo, is powered by a huge disc of particles around a supermassive black hole, and NASA says it is the brightest of these quasars in our skies. Its jet measures some 200,000 light-years.",
+    "diameter": null,
+    "distance": "its light has taken some 2.5 billion years to reach us",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "quasar",
+      "3c 273",
+      "virgo",
+      "supermassive black hole",
+      "jet"
+    ],
+    "related": [
+      "m87",
+      "sgr-a"
+    ],
+    "sources": [
+      {
+        "label": "NASA Science: Hubble gets the best image of bright quasar 3C 273",
+        "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-gets-the-best-image-of-bright-quasar-3c-273/"
+      },
+      {
+        "label": "NASA Science: Hubble Quasars",
+        "url": "https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-quasars/"
+      }
+    ],
+    "caveat": "Observed, in NASA's rounded words (Hubble release of 21 Nov 2013). Apparent magnitude and redshift are not stated on the page, so none are given. 'Quasar' means a distant galaxy core powered by a supermassive black hole; NASA says the closest quasars are hundreds of millions of light-years away."
+  },
+  {
+    "id": "io",
+    "name": "Io",
+    "category": "moon",
+    "summary": "Moon of Jupiter and one of its four large Galilean moons.",
+    "diameter": "about 3,643 km (mean radius 1,821.6 km)",
+    "distance": "about 421,800 km from Jupiter (mean semi-major axis)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "io",
+      "moon",
+      "satellite",
+      "jupiter",
+      "galilean"
+    ],
+    "related": [
+      "jupiter",
+      "europa",
+      "ganymede",
+      "callisto"
+    ],
+    "sources": [
+      {
+        "label": "NASA/JPL Planetary Satellite Mean Elements",
+        "url": "https://ssd.jpl.nasa.gov/sats/elem/sep.html"
+      },
+      {
+        "label": "NASA/JPL Planetary Satellite Physical Parameters",
+        "url": "https://ssd.jpl.nasa.gov/sats/phys_par/sep.html"
+      }
+    ],
+    "caveat": "The orbit's size, shape and tilt are JPL mean elements; where the moon sits on its orbit on a given date is illustrative, because mean elements are not an ephemeris. Distances and sizes in the 3D view are compressed, and the surface is a generic artistic placeholder, not this moon's real appearance."
+  },
+  {
+    "id": "europa",
+    "name": "Europa",
+    "category": "moon",
+    "summary": "Moon of Jupiter and one of its four large Galilean moons.",
+    "diameter": "about 3,122 km (mean radius 1,560.8 km)",
+    "distance": "about 671,100 km from Jupiter (mean semi-major axis)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "europa",
+      "moon",
+      "satellite",
+      "jupiter",
+      "galilean"
+    ],
+    "related": [
+      "jupiter",
+      "io",
+      "ganymede",
+      "callisto"
+    ],
+    "sources": [
+      {
+        "label": "NASA/JPL Planetary Satellite Mean Elements",
+        "url": "https://ssd.jpl.nasa.gov/sats/elem/sep.html"
+      },
+      {
+        "label": "NASA/JPL Planetary Satellite Physical Parameters",
+        "url": "https://ssd.jpl.nasa.gov/sats/phys_par/sep.html"
+      }
+    ],
+    "caveat": "The orbit's size, shape and tilt are JPL mean elements; where the moon sits on its orbit on a given date is illustrative, because mean elements are not an ephemeris. Distances and sizes in the 3D view are compressed, and the surface is a generic artistic placeholder, not this moon's real appearance."
+  },
+  {
+    "id": "ganymede",
+    "name": "Ganymede",
+    "category": "moon",
+    "summary": "Moon of Jupiter and one of its four large Galilean moons.",
+    "diameter": "about 5,262 km (mean radius 2,631.2 km)",
+    "distance": "about 1,070,400 km from Jupiter (mean semi-major axis)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "ganymede",
+      "moon",
+      "satellite",
+      "jupiter",
+      "galilean"
+    ],
+    "related": [
+      "jupiter",
+      "io",
+      "europa",
+      "callisto"
+    ],
+    "sources": [
+      {
+        "label": "NASA/JPL Planetary Satellite Mean Elements",
+        "url": "https://ssd.jpl.nasa.gov/sats/elem/sep.html"
+      },
+      {
+        "label": "NASA/JPL Planetary Satellite Physical Parameters",
+        "url": "https://ssd.jpl.nasa.gov/sats/phys_par/sep.html"
+      }
+    ],
+    "caveat": "The orbit's size, shape and tilt are JPL mean elements; where the moon sits on its orbit on a given date is illustrative, because mean elements are not an ephemeris. Distances and sizes in the 3D view are compressed, and the surface is a generic artistic placeholder, not this moon's real appearance."
+  },
+  {
+    "id": "callisto",
+    "name": "Callisto",
+    "category": "moon",
+    "summary": "Moon of Jupiter and one of its four large Galilean moons.",
+    "diameter": "about 4,821 km (mean radius 2,410.3 km)",
+    "distance": "about 1,882,700 km from Jupiter (mean semi-major axis)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "callisto",
+      "moon",
+      "satellite",
+      "jupiter",
+      "galilean"
+    ],
+    "related": [
+      "jupiter",
+      "io",
+      "europa",
+      "ganymede"
+    ],
+    "sources": [
+      {
+        "label": "NASA/JPL Planetary Satellite Mean Elements",
+        "url": "https://ssd.jpl.nasa.gov/sats/elem/sep.html"
+      },
+      {
+        "label": "NASA/JPL Planetary Satellite Physical Parameters",
+        "url": "https://ssd.jpl.nasa.gov/sats/phys_par/sep.html"
+      }
+    ],
+    "caveat": "The orbit's size, shape and tilt are JPL mean elements; where the moon sits on its orbit on a given date is illustrative, because mean elements are not an ephemeris. Distances and sizes in the 3D view are compressed, and the surface is a generic artistic placeholder, not this moon's real appearance."
+  },
+  {
+    "id": "titan",
+    "name": "Titan",
+    "category": "moon",
+    "summary": "Moon of Saturn.",
+    "diameter": "about 5,149 km (mean radius 2,574.73 km)",
+    "distance": "about 1,221,900 km from Saturn (mean semi-major axis)",
+    "mass": null,
+    "rotationPeriod": null,
+    "temperature": null,
+    "composition": null,
+    "discovery": null,
+    "orbitalPeriod": null,
+    "keywords": [
+      "titan",
+      "moon",
+      "satellite",
+      "saturn"
+    ],
+    "related": [
+      "saturn"
+    ],
+    "sources": [
+      {
+        "label": "NASA/JPL Planetary Satellite Mean Elements",
+        "url": "https://ssd.jpl.nasa.gov/sats/elem/sep.html"
+      },
+      {
+        "label": "NASA/JPL Planetary Satellite Physical Parameters",
+        "url": "https://ssd.jpl.nasa.gov/sats/phys_par/sep.html"
+      }
+    ],
+    "caveat": "The orbit's size, shape and tilt are JPL mean elements; where the moon sits on its orbit on a given date is illustrative, because mean elements are not an ephemeris. Distances and sizes in the 3D view are compressed, and the surface is a generic artistic placeholder, not this moon's real appearance."
+  }
+]

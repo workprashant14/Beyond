@@ -1,0 +1,25 @@
+{
+  "generated": "2026-11-22T21:04:56.831Z",
+  "textures": [
+    {
+      "id": "moon",
+      "file": "moon.jpg",
+      "width": 2048,
+      "height": 1024,
+      "title": "CGI Moon Kit, colour map (2025 version, 2,048 x 1,024)",
+      "credit": "NASA's Scientific Visualization Studio, from Lunar Reconnaissance Orbiter camera and laser altimeter data",
+      "page": "https://svs.gsfc.nasa.gov/4720",
+      "nature": "A visualisation built from LRO data and \"optimized for aesthetics, not science\" (NASA's words)."
+    },
+    {
+      "id": "jupiter",
+      "file": "jupiter.jpg",
+      "width": 3601,
+      "height": 1801,
+      "title": "Cassini's Best Maps of Jupiter, cylindrical map (PIA07782)",
+      "credit": "NASA/JPL/Space Science Institute",
+      "page": "https://www.jpl.nasa.gov/images/pia07782-cassinis-best-maps-of-jupiter-cylindrical-map/",
+      "nature": "Cassini-derived cylindrical global map of Jupiter (built from Cassini images of 11-12 December 2000), covering 360\u00b0 of longitude and \u00b190\u00b0 planetocentric latitude. The polar regions are less clearly visible. Colours are close to those the human eye would see, but not strictly true colour."
+    }
+  ]
+}
